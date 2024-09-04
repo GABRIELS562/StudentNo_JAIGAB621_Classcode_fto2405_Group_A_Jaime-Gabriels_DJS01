@@ -13,6 +13,15 @@ const initialDistance = 0; // distance (km)
 const initialFuel = 5000; // remaining fuel (kg)
 const fuelBurnRate = 0.5; // fuel burn rate (kg/s)
 
+function calculateNewVelocity(intialVelocity, acceleration, timeInSeconds) {
+  if (acceleration <= 0) {
+    throw new Error("Acceleration must ve a positive number in m/s");
+  }
+  if (timeInSeconds <= 0) {
+    throw new "Time must be a positive number in seconds"();
+  }
+}
+
 const d2 = d + vel * time; //calcultes new distance
 const rf = fbr * time; //calculates remaining fuel
 const vel2 = calcNewVel(acc, vel, time); //calculates new velocity based on acceleration
