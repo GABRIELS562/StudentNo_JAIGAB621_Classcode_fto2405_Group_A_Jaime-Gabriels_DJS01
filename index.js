@@ -48,16 +48,3 @@ const newVelocity = calculateNewVelocity(
 console.log(`Corrected New Velocity: ${newVelocity.toFixed(2)} km/h`);
 console.log(`Corrected New Distance: ${newDistance.toFixed(2)} km`);
 console.log(`Corrected Remaining Fuel: ${remainingFuel.toFixed(2)} kg`);
-
-// const d2 = d + vel * time; //calcultes new distance
-// const rf = fbr * time; //calculates remaining fuel
-// const vel2 = calcNewVel(acc, vel, time); //calculates new velocity based on acceleration
-
-// // Pick up an error with how the function below is called and make it robust to such errors
-// calcNewVel = (vel, acc, time) => {
-//   return vel + acc * time;
-// };
-
-// console.log(`Corrected New Velocity: ${vel2} km/h`);
-// console.log(`Corrected New Distance: ${d2} km`);
-// console.log(`Corrected Remaining Fuel: ${rf} kg`);
