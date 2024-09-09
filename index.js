@@ -14,7 +14,7 @@ function calculateNewVelocity(initialVelocity, acceleration, timeInSeconds) {
     throw new "Time must be a positive number in seconds"();
   }
 
-  const velocityInMetersPerSecond = initialVelocity * 3.6; // 1000/3600
+  const velocityInMetersPerSecond = initialVelocity / 3.6; // 1000/3600 I HAD MULTIPLY BY 3.6 SHOULD OF BEEN DIVIDE
 
   const newVelocityInMetersPerSecond =
     velocityInMetersPerSecond + acceleration * timeInSeconds; //calculate new velocity in ms/s
